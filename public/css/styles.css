@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container header {
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container header nav ul {
+  display: flex;
+}
+
+.container header nav ul li a {
+  color: #111;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+}
+
+.container header nav ul li a:hover {
+  opacity: 0.8;
+}
+
+main .main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: #fbdfdb;
+  border-radius: 30px;
+
+  padding: 32px;
+
+  margin-bottom: 48px;
+}
+
+main .main-section .main-text {
+  max-width: 350px;
+}
+
+main .main-section .main-text h1 {
+  color: #111;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+main .main-section .main-text p {
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+
+  opacity: 0.7;
+}
+
+main .recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+main .recipes h2 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+main .recipes .recipe-item img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+main .recipes .recipe-item h4 {
+  color: #111;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+main .recipes .recipe-item p {
+  color: #777;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+main .about-section h2 {
+  color: #111;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 20px auto;
+}
+
+main .about-section p {
+  color: #444;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 30px auto;
+}
+
+footer {
+  height: 64px;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #999;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 580px) {
+  main .main-section {
+    flex-direction: column;
+  }
+
+  main .main-section .main-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container header {
+    flex-direction: column;
+  }
+
+  .container header .logo img {
+    margin-bottom: 16px;
+  }
+}
