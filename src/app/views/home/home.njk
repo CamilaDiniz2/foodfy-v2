@@ -1,0 +1,42 @@
+{% extends 'layout.njk' %} 
+
+{% block content %}
+{% include 'parts/header.njk' %}
+<main>
+  <section class="main-section">
+    <div class="main-text">
+      <h2>As melhores receitas</h2>
+      <p>
+        Aprenda a construir os melhores pratos com receitas criadas por
+        profissionais do mundo inteiro.
+      </p>
+    </div>
+    <div class="main-img">
+      <img src="assets/chef.png" alt="" />
+    </div>
+  </section>
+
+  <section class="recipes-section">
+    <h2>Mais acessadas</h2>
+    <div class="recipes">
+      <div class="recipe-item">
+        <img src="assets/burger.png" alt="Hamburguer" />
+        <h4>Triplo bacon burger</h4>
+        <p>por Jorge Relato</p>
+      </div>
+
+      <div class="recipe-item">
+        <img src="assets/burger.png" alt="Hamburguer" />
+        <h4>Triplo bacon burger</h4>
+        <p>por Jorge Relato</p>
+      </div>
+
+      <div class="recipe-item">
+        <img src="assets/burger.png" alt="Hamburguer" />
+        <h4>Triplo bacon burger</h4>
+        <p>por Jorge Relato</p>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
